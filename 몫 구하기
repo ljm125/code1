@@ -7,9 +7,3 @@ int solution(int num1, int num2) {
     answer = num1/num2;
     return answer;
 }
-
-int main(){
-    int a = 100;
-    int b = 10;
-    solution(a,b);
-}
