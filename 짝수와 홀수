@@ -8,5 +8,3 @@ class Solution {
         return answer
     }
 }
-
-//kotlin으로 작성
