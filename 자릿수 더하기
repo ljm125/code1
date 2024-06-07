@@ -1,0 +1,27 @@
+package com.example.myproject1
+
+fun main(){
+    print("숫자를 입력하세요 : ")
+    var number = readLine()!!.toInt()
+
+    var test = Solution()
+
+    println("자릿수를 더한 결과는 : ${test.solution(number)}")
+}
+
+class Solution {
+
+    fun solution(n: Int): Int {
+        var answer = 0
+        var input = n
+
+        while(input!=0){
+            answer += input%10
+            //입력받은 변수를 10으로 나눈 나머지(자릿수 더하기)
+            input /= 10
+            //아직 더 더할 자릿수가 있으면 10으로 나눠서 추가 실행
+        }
+
+        return answer
+    }
+}
