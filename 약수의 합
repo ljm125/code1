@@ -1,0 +1,21 @@
+package com.example.myapplication
+
+fun main(){
+    print("약수를 구할 숫자를 입력하세요 : ")
+    var number = readLine()!!.toInt()
+
+    var result = Solution()
+    
+    print("${result.solution(number)}")
+}
+
+class Solution {
+    fun solution(n: Int): Int {
+        var answer = 0
+        for(i in 1..n){
+            if(n%i==0)
+                answer += i
+        }
+        return answer
+    }
+}
