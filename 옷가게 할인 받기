@@ -1,3 +1,10 @@
+package com.example.myapplication
+
+fun main() {
+    var price2 = Solution()
+    print("옷의 가격은 : ${price2.solution(readLine()!!.toInt())}")
+}
+
 class Solution {
     fun solution(price: Int): Int {
         var answer: Int = 0
@@ -11,7 +18,7 @@ class Solution {
             answer = (price*0.95).toInt()
         }
         else answer = price
-        
+
         return answer
     }
 }
