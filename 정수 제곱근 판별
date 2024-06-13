@@ -1,0 +1,19 @@
+fun main(){
+    var long = readLine()!!.toLong()
+    var input = Solution()
+
+    println("${input.solution(long)}")
+}
+
+class Solution {
+    fun solution(n: Long): Long {
+        var answer: Long = 0
+        var x:Long = 0
+        for(x in 1..n) {
+            if (n == x * x) {
+                return (x + 1) * (x + 1)
+            }
+        }
+        return -1
+    }
+}
