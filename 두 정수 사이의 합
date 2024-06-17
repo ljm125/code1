@@ -1,0 +1,16 @@
+class Solution {
+    fun solution(a: Int, b: Int): Long {
+        var n : Int = 0
+        var answer : Long = 0
+        
+        for(n in a..b){
+            answer += n
+        }
+        
+        if(a>b){
+            for(n in b..a)
+            answer += n
+        }
+        return answer
+    }
+}
