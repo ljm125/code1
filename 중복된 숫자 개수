@@ -1,0 +1,15 @@
+// 1. 람다식 & count 함수를 이용한 풀이 
+
+class Solution {
+    fun solution(array: IntArray, n: Int): Int = array.count{it == n}
+}
+
+
+// 2. 람다식 없이 풀이
+class Solution {
+    fun solution(array: IntArray, n: Int): Int {
+        var answer: Int = n
+        var result = array
+        return result.count{it==n}
+    }
+}
