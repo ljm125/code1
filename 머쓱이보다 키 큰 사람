@@ -1,0 +1,13 @@
+//1. count를 이용
+class Solution {
+    fun solution(array: IntArray, height: Int): Int {
+        return array.count{it>height}
+    }
+}
+
+//2. filter를 사용, filter() : 조건에 맞는 목록을 반환해줍니다. size(): 컬렉션의 크기를 나타냄
+class Solution {
+    fun solution(array: IntArray, height: Int): Int {
+        return array.filter{it>height}.size
+    }
+}
