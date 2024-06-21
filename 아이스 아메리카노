@@ -1,3 +1,4 @@
+//1. 처음 푼 풀이 mutableListOf
 class Solution {
     fun solution(money: Int): IntArray {
         var answer = mutableListOf<Int>()
@@ -7,6 +8,7 @@ class Solution {
     }
 }
 
+//2. intArrayOf 사용한 풀이
 class Solution {
     fun solution(money: Int): IntArray {
         var answer = intArrayOf(money/5500,money%5500)
