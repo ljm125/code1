@@ -1,0 +1,12 @@
+Class Solution {
+    fun solution(n: Int, numlist: IntArray): IntArray {
+        var answer = mutableListOf<Int>()
+        
+        for(i in numlist){
+            if(i%n==0)
+            answer.add(i)
+        }
+        
+        return answer.toIntArray()
+    }
+}
