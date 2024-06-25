@@ -1,0 +1,15 @@
+//1.slice
+class Solution {
+    fun solution(numbers: IntArray, num1: Int, num2: Int): IntArray = numbers.slice(num1..num2).toIntArray()
+}
+
+
+//2.copyOfRange
+class Solution {
+    fun solution(numbers: IntArray, num1: Int, num2: Int): IntArray = numbers.copyOfRange(num1,num2+1).toIntArray()
+}
+
+//3.subList()
+class Solution {
+    fun solution(numbers: IntArray, num1: Int, num2: Int): IntArray = numbers.toList().subList(num1,num2+1).toIntArray()
+}
