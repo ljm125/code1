@@ -1,0 +1,11 @@
+class Solution {
+    fun solution(my_string: String): Int {
+        var answer = 0
+        var input = my_string.toCharArray()
+        for(i in input){
+            if(i.isLowerCase()==false&&i.isUpperCase()==false)
+            answer += i.toString().toInt()
+        }
+        return answer
+    }
+}
