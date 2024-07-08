@@ -1,0 +1,25 @@
+//repeat 이용
+class Solution {
+    fun solution(my_string: String, n: Int): String {
+        var answer: String = ""
+        for(chr in my_string){
+            repeat(n){
+                answer += chr
+            }
+        }
+        return answer
+    }
+}
+
+//중첩 for문 이용
+class Solution {
+    fun solution(my_string: String, n: Int): String {
+        var answer: String = ""
+        for(chr in my_string){
+            for(i in 1..n){
+                answer += chr
+            }
+        }
+        return answer
+    }
+}
