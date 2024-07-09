@@ -1,0 +1,27 @@
+fun main(){
+    print("숫자를 입력하세요 : ")
+    val num = readLine()!!.toInt()
+    var n = num
+    var count = 0
+    while(true){
+        when{
+            num == 1 -> count = 0
+            num%2==0 -> {
+                n = num%2
+                count++
+            }
+            num%2==1 -> {
+                n = num*3+1
+                count++
+            }
+        }
+        if(n==1){
+            break
+        }
+        else if(count==500){
+            count = -1
+            break
+        }
+    }
+    print(count)
+}
