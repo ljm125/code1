@@ -1,0 +1,9 @@
+class Solution {
+    fun solution(arr: IntArray, divisor: Int): IntArray {
+        var result = arr.filter{it%divisor==0}.sorted().toIntArray()
+        
+        if(result.count()==0) result += -1
+        
+        return result
+    }
+}
