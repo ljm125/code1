@@ -1,0 +1,15 @@
+class Solution {
+    fun solution(phone_number: String): String {
+        var answer = ""
+        var count = 0
+        for(char in phone_number){
+            if(count>=phone_number.length-4)
+            answer += char
+            else{
+                answer += "*"
+                count += 1
+            }
+        }
+        return answer
+}
+}
