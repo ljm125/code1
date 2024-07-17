@@ -1,0 +1,11 @@
+class Solution {
+    fun solution(numbers: IntArray): Int {
+        var result = 0
+        var sum = 45
+        for(i in 0..numbers.size-1){
+            result += numbers[i]
+        }
+        
+        return sum - result
+    }
+}
