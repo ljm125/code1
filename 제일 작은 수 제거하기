@@ -1,0 +1,15 @@
+class Solution {
+    fun solution(arr: IntArray): IntArray {
+        var answer = intArrayOf()
+        
+        for(i in 0..arr.size-1){
+            if(arr[0]==10)
+            answer += -1
+            
+            else if(arr[i] != arr.minOrNull())
+            answer += arr[i]
+        }
+        
+        return answer
+    }
+}
